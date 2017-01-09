@@ -1,1 +1,25 @@
-Hello World
+<html>
+    <head>
+    </head>
+<body style="background: black">
+
+<pre id="json" style=" color: whitesmoke; font-size: 16; font-family: Courier New, Courier, monospace; "></pre>
+
+</body>
+        <script>
+var data = {
+   personal_info:{
+       "first_name":"Lulzim",
+       "last_name":"Gashi",
+       "birth":"1995-06-04"
+   },
+   projects:[
+       {},
+       {}
+   ]
+}
+
+
+document.getElementById("json").innerHTML = JSON.stringify(data, undefined, 2);
+        </script>
+</html>
